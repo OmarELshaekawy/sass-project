@@ -1,0 +1,132 @@
+$main-color: #ffffff;
+$second-color: #059669;
+$third-color: #21ba75;
+$main-font: system-ui;
+
+.meal-details {
+    font-family: $main-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.left-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-details {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+.more-about-meal {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.youtube, .website {
+    border: none;
+    margin: 8px;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: medium;
+}
+.fa-brands,.fa-solid{
+    margin: 5px;
+}
+.fa-solid{
+    color: white;
+}
+
+.youtube {
+    background-color: #dc2626;
+    color: white;
+    transition: .3s all;
+    &:hover {
+        background-color: #ff0000;
+    }
+}
+
+.website {
+    background-color: #21ba75;
+    color: white;
+    transition: .3s all;
+    &:hover {
+        background-color: #49dd9b;
+    }
+
+}
+
+.meal-text {
+    width: 40%;
+}
+
+.meal-info {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+
+.ingredients {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+          border-bottom: 4px solid #e5e7eb;
+        padding: 10px;
+    }
+    li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom: 2px solid #e5e7eb;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .meal-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-section, .meal-text, .ingredients {
+        width: 100%;
+    }
+
+    .left-section {
+        order: -1; 
+    }
+
+    .meal-text {
+        text-align: center;
+    }
+}

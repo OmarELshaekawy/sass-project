@@ -1,0 +1,7 @@
+.layout-container {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 80vh;
+}

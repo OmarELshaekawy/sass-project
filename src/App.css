@@ -1,0 +1,33 @@
+
+
+@media (min-width: 1024px) {
+    .item {
+        width: calc(25% - 20px);
+    }
+}
+
+/* Medium screens (>= 768px and < 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .item {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Small screens (>= 640px and < 768px) */
+@media (min-width: 640px) and (max-width: 767px) {
+    .item {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+/* Extra small screens (< 640px) */
+@media (max-width: 639px) {
+    .item {
+        width: calc(100% - 20px);
+        height: auto;
+        margin-bottom: 48px;
+        padding-bottom: 48px;
+        margin-top: 48px;
+        padding-top: 48px;
+    }}
